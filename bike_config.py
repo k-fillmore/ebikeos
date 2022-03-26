@@ -58,5 +58,9 @@ config.set('dash_cam', 'rear_cam_device', 'cam02')
 
 # Writing our configuration file to 'example.cfg'
 #with open('example.cfg', 'wb') as configfile:
+
+with open('example.cfg', 'w') as configfile:
+    config.write(configfile)
+
 print(config['gps']['installed'])
 
